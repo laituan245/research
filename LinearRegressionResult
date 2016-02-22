@@ -1,0 +1,28 @@
+Call:
+lm(formula = nbPegonets ~ (nbInstances + nbInstancesHavingType + 
+    nbInstancesRedirected + infoboxLength)^2, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2488.63    -1.25    -0.67     0.32  1997.91 
+
+Coefficients:
+                                              Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                  4.768e-01  8.957e-03   53.23   <2e-16 ***
+nbInstances                                  1.831e-01  2.447e-04  748.33   <2e-16 ***
+nbInstancesHavingType                       -1.024e-01  2.779e-04 -368.36   <2e-16 ***
+nbInstancesRedirected                        8.889e-03  9.379e-05   94.77   <2e-16 ***
+infoboxLength                                7.723e-04  7.339e-06  105.23   <2e-16 ***
+nbInstances:nbInstancesHavingType           -1.657e-06  1.917e-08  -86.44   <2e-16 ***
+nbInstances:nbInstancesRedirected           -1.119e-05  3.638e-08 -307.58   <2e-16 ***
+nbInstances:infoboxLength                    5.288e-07  2.200e-09  240.40   <2e-16 ***
+nbInstancesHavingType:nbInstancesRedirected  1.395e-05  5.756e-08  242.35   <2e-16 ***
+nbInstancesHavingType:infoboxLength         -5.023e-07  1.982e-09 -253.44   <2e-16 ***
+nbInstancesRedirected:infoboxLength         -7.437e-08  1.781e-09  -41.76   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 13.35 on 2357427 degrees of freedom
+Multiple R-squared:  0.8162,	Adjusted R-squared:  0.8162 
+F-statistic: 1.047e+06 on 10 and 2357427 DF,  p-value: < 2.2e-16
+
